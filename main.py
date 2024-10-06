@@ -11,8 +11,9 @@ import ssl
 import threading
 import time
 from queue import Queue
+from dotenv import load_dotenv
 
-# websocket.enableTrace(True)
+load_dotenv()
 
 session_updated = False
 playback_queue = Queue()  # Queue to hold audio data for sequential playback
